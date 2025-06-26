@@ -19,6 +19,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+import subprocess
 import time
 
 # 🧪 Konfiguration
@@ -28,6 +29,11 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 HOTFOLDER = "hotfolder"
 LOGCSV = "upload_log.csv"
 LOGJSON = "upload_log.json"
+
+# Chrome-Konfiguration
+CHROME_PATH = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+CHROME_PROFILE = os.path.expanduser("~/.chrome-ignorecert-profile")
+CHROME_PORT = 9222
 
 # 📁 Logdateien anlegen
 if not os.path.exists(LOGCSV):
@@ -145,7 +151,7 @@ def frage_zustand():
 
 def prüfe_chrome_debug_session():
     try:
-        res = requests.get("http://localhost:9222/json/version", timeout=2)
+        res = requests.get(f"http://localhost:{CHROME_PORT}/json/version", timeout=2)
         if res.status_code == 200:
             print("[green]🟢 Chrome-Debugging-Schnittstelle erreichbar[/green]")
             return True
@@ -155,6 +161,28 @@ def prüfe_chrome_debug_session():
     except Exception as e:
         print(f"[red]❌ Kann keine Verbindung zu Chrome-Debugging aufbauen:[/red] {e}")
         return False
+
+def starte_chrome_debugging():
+    """Starte Chrome im Debug-Modus, falls er noch nicht läuft."""
+    if prüfe_chrome_debug_session():
+        return True
+
+    if not os.path.exists(CHROME_PATH):
+        print(f"[red]❌ Chrome nicht gefunden unter {CHROME_PATH}[/red]")
+        return False
+
+    cmd = [
+        CHROME_PATH,
+        f"--remote-debugging-port={CHROME_PORT}",
+        f"--user-data-dir={CHROME_PROFILE}",
+        "--no-first-run",
+        "--no-default-browser-check",
+        "--start-maximized",
+    ]
+
+    subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    time.sleep(2)
+    return prüfe_chrome_debug_session()
 
 def lade_bilder(driver, bilderpfad):
     bilddateien = [
@@ -178,15 +206,15 @@ def lade_bilder(driver, bilderpfad):
         print("[yellow]⚠️ Konnte Upload nicht bestätigen.[/yellow]")
 
 def führe_upload_durch(info, bilderpfad):
-    print("[cyan]🌐 Verwende bestehende Chrome-Debugging-Session...[/cyan]")
+    print("[cyan]🌐 Starte Chrome-Debugging-Session...[/cyan]")
 
-    if not prüfe_chrome_debug_session():
-        print("[red]Bitte starte Chrome manuell mit:[/red]")
-        print('  /Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --remote-debugging-port=9222 --user-data-dir="$HOME/.chrome-ignorecert-profile"')
+    if not starte_chrome_debugging():
+        print("[red]Bitte starte Chrome manuell:[/red]")
+        print(f'  {CHROME_PATH} --remote-debugging-port={CHROME_PORT} --user-data-dir="{CHROME_PROFILE}"')
         return
 
     options = Options()
-    options.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
+    options.add_experimental_option("debuggerAddress", f"127.0.0.1:{CHROME_PORT}")
 
     driver = webdriver.Chrome(options=options)
     driver.implicitly_wait(10)
