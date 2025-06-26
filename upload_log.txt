@@ -1,0 +1,204 @@
+[2025-06-24 22:51:49] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-24 22:51:50] Konvertiert: IMG_7356.HEIC => IMG_7356.jpg
+[2025-06-24 22:51:50] Konvertiert: IMG_7357.HEIC => IMG_7357.jpg
+[2025-06-24 22:51:51] Konvertiert: IMG_7358.HEIC => IMG_7358.jpg
+[2025-06-24 22:51:51] Konvertiert: IMG_7355.HEIC => IMG_7355.jpg
+[2025-06-24 22:51:51] HEIC-Bilder im Ordner 'hotfolder/DVBT-Receiver' verarbeitet.
+[2025-06-24 22:52:32] GPT-Kategorie-Eingabe: 'TV' => Vorschlag: 'Multimedia & Elektronik > TV & Video'
+[2025-06-24 23:08:20] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-24 23:08:20] HEIC-Bilder im Ordner 'hotfolder/DVBT-Receiver' verarbeitet.
+[2025-06-24 23:08:47] GPT-Kategorie-Eingabe: 'TV' => Vorschlag: 'Multimedia & Elektronik > TV & Video'
+[2025-06-25 07:45:44] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 07:45:44] HEIC-Bilder im Ordner 'hotfolder/DVBT-Receiver' verarbeitet.
+[2025-06-25 07:46:18] GPT-Kategorie-Eingabe: 'TV' => Vorschlag: 'Multimedia & Elektronik > TV & Video'
+[2025-06-25 07:46:38] GPT-Titel generiert: 1. Produkttitel: "Gebrauchter DVBT-Receiver mit Zimmerantenne - Gratis Abholung!"
+[2025-06-25 07:46:38] GPT-Beschreibung generiert: 2. Beschreibungstext: 
+"Sie suchen eine einfache und erschwingliche Möglichkeit, Ihre Lieblingssendungen zu empfangen? Entdecken Sie unseren DVBT-Receiver mit Zimmerantenne! Obwohl gebraucht, versichert dieser Receiver eine optimale Leistung und sorgt für einen reibungslosen TV-Genuss. Dank der Zimmerantenne haben Sie die Möglichkeit, Ihre Sendungen auch in Räumen ohne Kabelanschluss zu empfangen. Ideal für Studenten, Sparfüchse oder einfach als Ersatzgerät. Und das Beste daran? Es ist absolut kostenlos! Ja, sie haben richtig gelesen. Sie zahlen 0€! Schnappen Sie sich dieses einmalige Angebot, bevor es weg ist. Nur zur Selbstabholung. Bitte beachten Sie, dass es sich um einen Privatverkauf handelt, daher keine Garantie oder Rücknahme."
+[2025-06-25 07:46:45] Fehler beim Upload: Message: element not interactable
+  (Session info: chrome=137.0.7151.120)
+Stacktrace:
+0   chromedriver                        0x0000000103775358 chromedriver + 6136664
+1   chromedriver                        0x000000010376caba chromedriver + 6101690
+2   chromedriver                        0x00000001032011c3 chromedriver + 418243
+3   chromedriver                        0x000000010324cf9b chromedriver + 728987
+4   chromedriver                        0x000000010324b26b chromedriver + 721515
+5   chromedriver                        0x00000001032791f2 chromedriver + 909810
+6   chromedriver                        0x00000001032469d8 chromedriver + 702936
+7   chromedriver                        0x00000001032793ae chromedriver + 910254
+8   chromedriver                        0x00000001032a0d82 chromedriver + 1072514
+9   chromedriver                        0x0000000103278fc3 chromedriver + 909251
+10  chromedriver                        0x0000000103245217 chromedriver + 696855
+11  chromedriver                        0x0000000103245e81 chromedriver + 700033
+12  chromedriver                        0x0000000103733220 chromedriver + 5866016
+13  chromedriver                        0x000000010373718f chromedriver + 5882255
+14  chromedriver                        0x000000010370e5c2 chromedriver + 5715394
+15  chromedriver                        0x0000000103737aef chromedriver + 5884655
+16  chromedriver                        0x00000001036fcd84 chromedriver + 5643652
+17  chromedriver                        0x000000010375a2b8 chromedriver + 6025912
+18  chromedriver                        0x000000010375a480 chromedriver + 6026368
+19  chromedriver                        0x000000010376c681 chromedriver + 6100609
+20  libsystem_pthread.dylib             0x00007ff8013e718b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff8013e2ae3 thread_start + 15
+
+[2025-06-25 07:51:37] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 07:51:37] HEIC-Bilder im Ordner 'hotfolder/DVBT-Receiver' verarbeitet.
+[2025-06-25 07:51:46] GPT-Kategorie-Eingabe: '' => Vorschlag: 'Da keine Eingabe vorhanden ist, kann keine Kategorie zugeordnet werden.'
+[2025-06-25 07:51:59] Durchschnittspreis aus 1 Anzeigen: 100.00 €
+[2025-06-25 07:52:07] GPT-Titel generiert: 1. Produkttitel: "Einzigartiges Schnäppchen! Gebrauchtes Produkt zum unschlagbaren Preis von 100€!"
+[2025-06-25 07:52:07] GPT-Beschreibung generiert: 2. Beschreibungstext: "Verpassen Sie nicht die Chance, dieses wunderbare gebrauchte Produkt für nur 100€ zu erwerben! Es ist zwar gebraucht, aber immer noch in einem guten Zustand und bereit, Ihnen treue Dienste zu leisten. Der Preisverhandlungsbereich ist begrenzt, da wir bereits den niedrigstmöglichen Preis für solch ein wertvolles Produkt anbieten. Also zögern Sie nicht, greifen Sie zu und machen Sie ein tolles Schnäppchen! Bitte beachten Sie, dass das Produkt abgeholt werden muss. Wir freuen uns auf Ihre Nachricht und stehen Ihnen bei weiteren Fragen gerne zur Verfügung."
+[2025-06-25 07:52:12] Fehler beim Upload: Message: element not interactable
+  (Session info: chrome=137.0.7151.120)
+Stacktrace:
+0   chromedriver                        0x000000010fe0e358 chromedriver + 6136664
+1   chromedriver                        0x000000010fe05aba chromedriver + 6101690
+2   chromedriver                        0x000000010f89a1c3 chromedriver + 418243
+3   chromedriver                        0x000000010f8e5f9b chromedriver + 728987
+4   chromedriver                        0x000000010f8e426b chromedriver + 721515
+5   chromedriver                        0x000000010f9121f2 chromedriver + 909810
+6   chromedriver                        0x000000010f8df9d8 chromedriver + 702936
+7   chromedriver                        0x000000010f9123ae chromedriver + 910254
+8   chromedriver                        0x000000010f939d82 chromedriver + 1072514
+9   chromedriver                        0x000000010f911fc3 chromedriver + 909251
+10  chromedriver                        0x000000010f8de217 chromedriver + 696855
+11  chromedriver                        0x000000010f8dee81 chromedriver + 700033
+12  chromedriver                        0x000000010fdcc220 chromedriver + 5866016
+13  chromedriver                        0x000000010fdd018f chromedriver + 5882255
+14  chromedriver                        0x000000010fda75c2 chromedriver + 5715394
+15  chromedriver                        0x000000010fdd0aef chromedriver + 5884655
+16  chromedriver                        0x000000010fd95d84 chromedriver + 5643652
+17  chromedriver                        0x000000010fdf32b8 chromedriver + 6025912
+18  chromedriver                        0x000000010fdf3480 chromedriver + 6026368
+19  chromedriver                        0x000000010fe05681 chromedriver + 6100609
+20  libsystem_pthread.dylib             0x00007ff8013e718b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff8013e2ae3 thread_start + 15
+
+[2025-06-25 08:06:12] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 08:06:12] HEIC-Bilder im Ordner 'hotfolder/DVBT-Receiver' verarbeitet.
+[2025-06-25 08:06:18] GPT-Kategorie-Eingabe: '' => Vorschlag: 'Es tut mir leid, aber ohne Informationen kann ich keine Kategorie zuordnen.'
+[2025-06-25 08:06:46] GPT-Titel generiert: 1. Produkttitel: "Gratis abzugeben! Überraschungs-Artikel in gebrauchtem Zustand!"
+[2025-06-25 08:06:46] GPT-Beschreibung generiert: 2. Beschreibungstext: 
+"Sie lieben Überraschungen und sind bereit, etwas Neues auszuprobieren? Dann haben wir genau das Richtige für Sie! Wir bieten einen gebrauchten Artikel zum Nulltarif an. Der genaue Inhalt bleibt ein Geheimnis bis zum Auspacken, aber wir versprechen, dass es etwas Interessantes und Nützliches ist. Der Artikel wurde liebevoll genutzt und wartet darauf, ein neues Zuhause zu finden. Nutzen Sie diese einmalige Chance, ein tolles Schnäppchen zu machen - völlig kostenlos! Bitte beachten Sie, dass der Artikel abgeholt werden muss. Wer zuerst kommt, mahlt zuerst. Viel Glück!"
+[2025-06-25 08:06:52] Cookie-Banner akzeptiert.
+[2025-06-25 08:06:53] Fehler beim Upload: Message: element not interactable
+  (Session info: chrome=138.0.7204.49)
+Stacktrace:
+0   chromedriver                        0x0000000105617358 chromedriver + 6136664
+1   chromedriver                        0x000000010560eaba chromedriver + 6101690
+2   chromedriver                        0x00000001050a31c3 chromedriver + 418243
+3   chromedriver                        0x00000001050eef9b chromedriver + 728987
+4   chromedriver                        0x00000001050ed26b chromedriver + 721515
+5   chromedriver                        0x000000010511b1f2 chromedriver + 909810
+6   chromedriver                        0x00000001050e89d8 chromedriver + 702936
+7   chromedriver                        0x000000010511b3ae chromedriver + 910254
+8   chromedriver                        0x0000000105142d82 chromedriver + 1072514
+9   chromedriver                        0x000000010511afc3 chromedriver + 909251
+10  chromedriver                        0x00000001050e7217 chromedriver + 696855
+11  chromedriver                        0x00000001050e7e81 chromedriver + 700033
+12  chromedriver                        0x00000001055d5220 chromedriver + 5866016
+13  chromedriver                        0x00000001055d918f chromedriver + 5882255
+14  chromedriver                        0x00000001055b05c2 chromedriver + 5715394
+15  chromedriver                        0x00000001055d9aef chromedriver + 5884655
+16  chromedriver                        0x000000010559ed84 chromedriver + 5643652
+17  chromedriver                        0x00000001055fc2b8 chromedriver + 6025912
+18  chromedriver                        0x00000001055fc480 chromedriver + 6026368
+19  chromedriver                        0x000000010560e681 chromedriver + 6100609
+20  libsystem_pthread.dylib             0x00007ff8013e718b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff8013e2ae3 thread_start + 15
+
+[2025-06-25 08:10:32] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 08:10:32] HEIC-Bilder im Ordner 'hotfolder/DVBT-Receiver' verarbeitet.
+[2025-06-25 08:15:04] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 08:15:04] HEIC-Bilder im Ordner 'hotfolder/DVBT-Receiver' verarbeitet.
+[2025-06-25 08:15:09] GPT-Kategorie-Eingabe: '' => Vorschlag: 'Die Eingabe ist leer, daher kann keine Kategorie zugeordnet werden.'
+[2025-06-25 08:15:30] GPT-Titel generiert: 1. Produkttitel:
+[2025-06-25 08:15:30] GPT-Beschreibung generiert: "Überraschungsartikel! Gut erhaltene Gebrauchtware zu verschenken!"
+
+2. Beschreibungstext:
+"Sie sind auf der Suche nach einem Schnäppchen? Wir haben genau das Richtige für Sie! Bei uns bekommen Sie einen gebrauchten, aber gut erhaltenen Artikel, dessen Kategorie und Titel wir Ihnen noch nicht verraten, komplett kostenfrei! Lassen Sie sich überraschen und schnappen Sie sich dieses Angebot, bevor es weg ist. Auch wenn der Preis unschlagbar ist, können Sie sich auf die Qualität und Funktionalität des Artikels verlassen. Zögern Sie nicht, uns für weitere Informationen zu kontaktieren. Wer zuerst kommt, mahlt zuerst!"
+[2025-06-25 08:15:35] Cookie-Banner akzeptiert.
+[2025-06-25 08:15:35] Fehler beim Upload: Message: element not interactable
+  (Session info: chrome=138.0.7204.49)
+Stacktrace:
+0   chromedriver                        0x00000001024f3358 chromedriver + 6136664
+1   chromedriver                        0x00000001024eaaba chromedriver + 6101690
+2   chromedriver                        0x0000000101f7f1c3 chromedriver + 418243
+3   chromedriver                        0x0000000101fcaf9b chromedriver + 728987
+4   chromedriver                        0x0000000101fc926b chromedriver + 721515
+5   chromedriver                        0x0000000101ff71f2 chromedriver + 909810
+6   chromedriver                        0x0000000101fc49d8 chromedriver + 702936
+7   chromedriver                        0x0000000101ff73ae chromedriver + 910254
+8   chromedriver                        0x000000010201ed82 chromedriver + 1072514
+9   chromedriver                        0x0000000101ff6fc3 chromedriver + 909251
+10  chromedriver                        0x0000000101fc3217 chromedriver + 696855
+11  chromedriver                        0x0000000101fc3e81 chromedriver + 700033
+12  chromedriver                        0x00000001024b1220 chromedriver + 5866016
+13  chromedriver                        0x00000001024b518f chromedriver + 5882255
+14  chromedriver                        0x000000010248c5c2 chromedriver + 5715394
+15  chromedriver                        0x00000001024b5aef chromedriver + 5884655
+16  chromedriver                        0x000000010247ad84 chromedriver + 5643652
+17  chromedriver                        0x00000001024d82b8 chromedriver + 6025912
+18  chromedriver                        0x00000001024d8480 chromedriver + 6026368
+19  chromedriver                        0x00000001024ea681 chromedriver + 6100609
+20  libsystem_pthread.dylib             0x00007ff8013e718b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff8013e2ae3 thread_start + 15
+
+[2025-06-25 08:46:12] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 08:46:21] GPT-Kategorie-Eingabe: '' => Vorschlag: 'Da keine Eingabe vorhanden ist, kann keine Kategorie zugeordnet werden.'
+[2025-06-25 08:46:45] Chromedriver war nicht in Quarantäne oder konnte nicht bereinigt werden.
+[2025-06-25 08:47:01] Fertig für Upload: {'titel': '', 'kategorie': 'Da keine Eingabe vorhanden ist, kann keine Kategorie zugeordnet werden.', 'beschreibung': '\nZustand: gebraucht.\nMerkmale: ', 'preis': '30', 'ordner': 'hotfolder/DVBT-Receiver'}
+[2025-06-25 08:47:01] Upload-Versuch gestartet.
+[2025-06-25 08:47:01] Upload-Funktion nicht implementiert.
+[2025-06-25 09:01:48] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 09:10:37] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 09:10:47] GPT-Kategorie-Eingabe: 'TV' => Vorschlag: 'Multimedia & Elektronik > TV & Video'
+[2025-06-25 09:11:15] Chromedriver war nicht in Quarantäne oder konnte nicht bereinigt werden.
+[2025-06-25 09:16:08] Fertig für Upload: {'titel': 'DVBT-Receiver', 'kategorie': 'Multimedia & Elektronik > TV & Video', 'beschreibung': '\nZustand: gebraucht.\nMerkmale: ', 'preis': 'xattr: /usr/local/bin/chromedriver: No such xattr: com.apple.quarantine', 'ordner': 'hotfolder/DVBT-Receiver'}
+[2025-06-25 09:16:08] Upload-Versuch gestartet.
+[2025-06-25 09:16:08] Upload abgeschlossen (simuliert).
+[2025-06-25 09:21:02] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 09:21:10] GPT-Kategorie-Eingabe: '' => Vorschlag: 'Die Eingabe ist leer, daher kann keine Kategorie zugeordnet werden.'
+[2025-06-25 09:21:26] Chromedriver war nicht in Quarantäne oder konnte nicht bereinigt werden.
+[2025-06-25 11:42:22] Fertig für Upload: {'titel': 'DVBT-Receiver', 'kategorie': 'Die Eingabe ist leer, daher kann keine Kategorie zugeordnet werden.', 'beschreibung': '\nZustand: gebraucht.\nMerkmale: ', 'preis': '0', 'ordner': 'hotfolder/DVBT-Receiver'}
+[2025-06-25 11:42:22] Upload-Versuch gestartet.
+[2025-06-25 11:42:22] Upload abgeschlossen (simuliert).
+[2025-06-25 11:47:35] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 11:47:43] GPT-Kategorie-Eingabe: 'TV' => Vorschlag: '"Elektronik > TV & Video"'
+[2025-06-25 11:47:58] Chromedriver war nicht in Quarantäne oder konnte nicht bereinigt werden.
+[2025-06-25 11:48:12] Fertig für Upload: {'titel': 'DVBT-Receiver', 'kategorie': '"Elektronik > TV & Video"', 'beschreibung': '\nZustand: gebraucht.\nMerkmale: ', 'preis': '0', 'ordner': 'hotfolder/DVBT-Receiver'}
+[2025-06-25 11:48:12] Upload-Versuch gestartet.
+[2025-06-25 11:48:12] Upload abgeschlossen (simuliert).
+[2025-06-25 11:52:10] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 11:52:15] GPT-Kategorie-Eingabe: 'TV' => Vorschlag: 'Multimedia & Elektronik > TV & Video'
+[2025-06-25 11:52:32] Chromedriver war nicht in Quarantäne oder konnte nicht bereinigt werden.
+[2025-06-25 11:52:42] Fertig für Upload: {'titel': 'DVBT-Receiver', 'kategorie': 'Multimedia & Elektronik > TV & Video', 'beschreibung': '\nZustand: gebraucht.\nMerkmale: ', 'preis': '0', 'ordner': 'hotfolder/DVBT-Receiver'}
+[2025-06-25 11:52:42] Upload-Versuch gestartet.
+[2025-06-25 11:52:42] Upload abgeschlossen (simuliert).
+[2025-06-25 11:54:08] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 11:54:08] Konvertiert: IMG_7359.HEIC => IMG_7359.jpg
+[2025-06-25 11:54:16] GPT-Kategorie-Eingabe: 'TV' => Vorschlag: 'Multimedia & Elektronik > TV & Video'
+[2025-06-25 11:54:23] Chromedriver war nicht in Quarantäne oder konnte nicht bereinigt werden.
+[2025-06-25 11:54:31] Fertig für Upload: {'titel': 'DVBT-Receiver', 'kategorie': 'Multimedia & Elektronik > TV & Video', 'beschreibung': '\nZustand: neu.\nMerkmale: ', 'preis': '0', 'ordner': 'hotfolder/DVBT-Receiver'}
+[2025-06-25 11:54:31] Upload-Versuch gestartet.
+[2025-06-25 11:54:31] Upload abgeschlossen (simuliert).
+[2025-06-25 11:57:51] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 11:57:59] GPT-Kategorie-Eingabe: 'TV' => Vorschlag: 'Multimedia & Elektronik > TV & Video'
+[2025-06-25 11:58:09] Chromedriver war nicht in Quarantäne oder konnte nicht bereinigt werden.
+[2025-06-25 11:58:17] Fertig für Upload: {'titel': 'DVBT-Receiver', 'kategorie': 'Multimedia & Elektronik > TV & Video', 'beschreibung': '\nZustand: gebraucht.\nMerkmale: ', 'preis': '0', 'ordner': 'hotfolder/DVBT-Receiver'}
+[2025-06-25 11:58:17] Upload-Versuch gestartet.
+[2025-06-25 11:58:17] Upload abgeschlossen (simuliert).
+[2025-06-25 12:00:16] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 12:00:22] GPT-Kategorie-Eingabe: 'TV' => Vorschlag: 'Multimedia & Elektronik > TV & Video'
+[2025-06-25 12:17:41] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 12:17:49] GPT-Kategorie-Eingabe: 'TV' => Vorschlag: '"Elektronik > TV & Video"'
+[2025-06-25 12:17:59] Chromedriver war nicht in Quarantäne oder konnte nicht bereinigt werden.
+[2025-06-25 12:18:09] Fertig für Upload: {'titel': 'DVBT-Receiver', 'kategorie': '"Elektronik > TV & Video"', 'beschreibung': '\nZustand: gebraucht.\nMerkmale: ', 'preis': '0', 'ordner': 'hotfolder/DVBT-Receiver'}
+[2025-06-25 12:18:09] Upload-Versuch gestartet.
+[2025-06-25 12:18:09] Upload abgeschlossen (simuliert).
+[2025-06-25 13:01:01] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 13:01:13] GPT-Titel/Beschreibung erzeugt: {'titel': 'Hochwertiger DVBT-Receiver in Top-Zustand', 'beschreibung': 'Zum Verkauf steht ein kaum genutzter, hervorragend erhaltener DVBT-Receiver. Ideal für den Empfang digitaler Fernsehsignale. Einfache Bedienung und hohe Leistungsfähigkeit. Ein Muss für jeden Haushalt. Jetzt zugreifen!'}
+[2025-06-25 13:03:24] Fehler bei HEIC-Konvertierung IMG_6031 4.HEIC: Invalid input: Unspecified: File size too small.
+[2025-06-25 13:03:37] GPT-Titel/Beschreibung erzeugt: {'titel': 'Hochwertiger DVBT-Receiver in Top Zustand', 'beschreibung': 'Zum Verkauf steht ein erstklassiger DVBT-Receiver. Trotz gebrauchtem Zustand bietet er eine hervorragende Leistung und ist ideal für alle, die ein qualitativ hochwertiges und zuverlässiges Gerät suchen. Die genaue Modellbezeichnung ist auf den Bildern zu sehen. Bei Interesse melden Sie sich gerne.'}
+[2025-06-25 13:07:34.318017] Fehler bei HEIC-Konvertierung: Invalid input: Unspecified: File size too small.
+[2025-06-25 13:08:18.913027] Fehler bei HEIC-Konvertierung: Invalid input: Unspecified: File size too small.
+[2025-06-25 13:20:03] Übersprungen (zu klein): IMG_6031 4.HEIC
+[2025-06-25 13:20:14] GPT-Titel/Beschreibung erzeugt: {'titel': 'DVBT-Receiver in Top Zustand', 'beschreibung': 'Zum Verkauf steht ein kaum genutzter DVBT-Receiver. Ideal für den Empfang digitaler Fernseh- und Radioprogramme. Einfache Bedienung und hohe Qualität. Zustand wie neu.'}

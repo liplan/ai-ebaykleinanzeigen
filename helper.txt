@@ -1,0 +1,12 @@
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir="$HOME/.chrome-ignorecert-profile"
+
+
+
+https://www.kleinanzeigen.de/m-meine-anzeigen.html
+
+
+https://www.kleinanzeigen.de/p-anzeige-aufgeben-schritt2.html
+
+
+
+<div class="flex items-center justify-center gap-xsmall"><span>Entwurf speichern</span></div>
