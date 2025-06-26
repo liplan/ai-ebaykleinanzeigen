@@ -18,6 +18,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 import time
 
 # 🧪 Konfiguration
@@ -155,6 +156,27 @@ def prüfe_chrome_debug_session():
         print(f"[red]❌ Kann keine Verbindung zu Chrome-Debugging aufbauen:[/red] {e}")
         return False
 
+def lade_bilder(driver, bilderpfad):
+    bilddateien = [
+        os.path.abspath(os.path.join(bilderpfad, f))
+        for f in os.listdir(bilderpfad)
+        if f.lower().endswith((".jpg", ".jpeg", ".png"))
+    ]
+
+    if not bilddateien:
+        print("[yellow]⚠️ Keine Bilder zum Hochladen gefunden.[/yellow]")
+        return
+
+    image_input = driver.find_element(By.NAME, "image1")
+    image_input.send_keys("\n".join(bilddateien))
+
+    try:
+        WebDriverWait(driver, 20).until(
+            lambda d: len(d.find_elements(By.CSS_SELECTOR, "img")) >= len(bilddateien)
+        )
+    except TimeoutException:
+        print("[yellow]⚠️ Konnte Upload nicht bestätigen.[/yellow]")
+
 def führe_upload_durch(info, bilderpfad):
     print("[cyan]🌐 Verwende bestehende Chrome-Debugging-Session...[/cyan]")
 
@@ -167,6 +189,7 @@ def führe_upload_durch(info, bilderpfad):
     options.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
 
     driver = webdriver.Chrome(options=options)
+    driver.implicitly_wait(10)
 
     try:
         driver.get("https://www.ebay-kleinanzeigen.de/p-anzeige-erstellen.html")
@@ -187,14 +210,12 @@ def führe_upload_durch(info, bilderpfad):
         zustand_element = driver.find_element(By.CSS_SELECTOR, f"label[for='condition_{zustand_key}']")
         driver.execute_script("arguments[0].click();", zustand_element)
 
-        image_input = driver.find_element(By.NAME, "image1")
-        for file in os.listdir(bilderpfad):
-            if file.lower().endswith((".jpg", ".jpeg", ".png")):
-                image_input.send_keys(os.path.abspath(os.path.join(bilderpfad, file)))
-                time.sleep(1)
+        lade_bilder(driver, bilderpfad)
 
+        WebDriverWait(driver, 30).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']"))
+        )
         print("[green]✔️ Upload-Felder ausgefüllt. Bitte manuell prüfen und absenden.[/green]")
-        time.sleep(12)
 
     except Exception as e:
         print(f"[red]❌ Upload-Fehler:[/red] {e}")
