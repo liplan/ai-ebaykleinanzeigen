@@ -126,7 +126,7 @@ def gpt_kategorie_vorschlag(textbasis):
         return "Allgemein > Sonstiges"
 
 def ermittle_durchschnittspreis(suchbegriff):
-    url = f"https://www.ebay-kleinanzeigen.de/s-suche.html?keywords={suchbegriff}"
+    url = f"https://www.kleinanzeigen.de/s-suche.html?keywords={suchbegriff}"
     try:
         html = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}).text
         soup = BeautifulSoup(html, "html.parser")
@@ -220,7 +220,7 @@ def führe_upload_durch(info, bilderpfad):
     driver.implicitly_wait(10)
 
     try:
-        driver.get("https://www.ebay-kleinanzeigen.de/p-anzeige-erstellen.html")
+        driver.get("https://www.kleinanzeigen.de/p-anzeige-aufgeben-schritt2.html")
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "title")))
 
         driver.find_element(By.NAME, "title").send_keys(info["titel"])
