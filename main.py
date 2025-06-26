@@ -180,9 +180,20 @@ def starte_chrome_debugging():
         "--start-maximized",
     ]
 
-    subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    time.sleep(2)
-    return prüfe_chrome_debug_session()
+    try:
+        subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    except FileNotFoundError:
+        print(f"[red]❌ Chrome nicht gefunden unter {CHROME_PATH}[/red]")
+        return False
+
+    # Warte, bis die Debug-Schnittstelle erreichbar ist (max. 10s)
+    for _ in range(10):
+        if prüfe_chrome_debug_session():
+            return True
+        time.sleep(1)
+
+    print("[red]⚠️ Chrome-Debugging konnte nicht gestartet werden.[/red]")
+    return False
 
 def lade_bilder(driver, bilderpfad):
     bilddateien = [
