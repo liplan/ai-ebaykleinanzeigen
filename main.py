@@ -18,7 +18,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, ElementNotInteractableException
 import subprocess
 import time
 
@@ -207,7 +207,11 @@ def lade_bilder(driver, bilderpfad):
         return
 
     image_input = driver.find_element(By.NAME, "image1")
-    image_input.send_keys("\n".join(bilddateien))
+    try:
+        image_input.send_keys("\n".join(bilddateien))
+    except ElementNotInteractableException:
+        print("[red]❌ Element 'image1' nicht interagierbar[/red]")
+        raise
 
     try:
         WebDriverWait(driver, 20).until(
@@ -234,9 +238,23 @@ def führe_upload_durch(info, bilderpfad):
         driver.get("https://www.kleinanzeigen.de/p-anzeige-aufgeben-schritt2.html")
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "title")))
 
-        driver.find_element(By.NAME, "title").send_keys(info["titel"])
-        driver.find_element(By.NAME, "description").send_keys(info["beschreibung"])
-        driver.find_element(By.NAME, "priceAmount").send_keys(str(info["preis"]))
+        try:
+            driver.find_element(By.NAME, "title").send_keys(info["titel"])
+        except ElementNotInteractableException:
+            print("[red]❌ Element 'title' nicht interagierbar[/red]")
+            raise
+
+        try:
+            driver.find_element(By.NAME, "description").send_keys(info["beschreibung"])
+        except ElementNotInteractableException:
+            print("[red]❌ Element 'description' nicht interagierbar[/red]")
+            raise
+
+        try:
+            driver.find_element(By.NAME, "priceAmount").send_keys(str(info["preis"]))
+        except ElementNotInteractableException:
+            print("[red]❌ Element 'priceAmount' nicht interagierbar[/red]")
+            raise
 
         zustand_mapping = {
             "neu": "new",
@@ -247,7 +265,11 @@ def führe_upload_durch(info, bilderpfad):
         }
         zustand_key = zustand_mapping.get(info["zustand"], "used")
         zustand_element = driver.find_element(By.CSS_SELECTOR, f"label[for='condition_{zustand_key}']")
-        driver.execute_script("arguments[0].click();", zustand_element)
+        try:
+            driver.execute_script("arguments[0].click();", zustand_element)
+        except ElementNotInteractableException:
+            print("[red]❌ Element 'zustand' nicht interagierbar[/red]")
+            raise
 
         lade_bilder(driver, bilderpfad)
 
