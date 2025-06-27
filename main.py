@@ -206,8 +206,18 @@ def lade_bilder(driver, bilderpfad):
         print("[yellow]⚠️ Keine Bilder zum Hochladen gefunden.[/yellow]")
         return
 
-    image_input = driver.find_element(By.NAME, "image1")
-    image_input.send_keys("\n".join(bilddateien))
+    try:
+        image_input = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "input[type='file']"))
+        )
+        driver.execute_script(
+            "arguments[0].style.display = 'block'; arguments[0].style.visibility = 'visible';",
+            image_input,
+        )
+        image_input.send_keys("\n".join(bilddateien))
+    except Exception as e:
+        print(f"[red]❌ Bilder konnten nicht hochgeladen werden:[/red] {e}")
+        return
 
     try:
         WebDriverWait(driver, 20).until(
