@@ -18,7 +18,11 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, ElementNotInteractableException
+from selenium.common.exceptions import (
+    TimeoutException,
+    ElementNotInteractableException,
+    StaleElementReferenceException,
+)
 import subprocess
 import time
 
@@ -220,6 +224,21 @@ def lade_bilder(driver, bilderpfad):
     except TimeoutException:
         print("[yellow]⚠️ Konnte Upload nicht bestätigen.[/yellow]")
 
+def send_keys_stabil(driver, by, locator, text, feldname, versuche=3):
+    """Sende Text an ein Element und fange StaleElementReferenceException ab."""
+    for i in range(versuche):
+        try:
+            WebDriverWait(driver, 10).until(EC.element_to_be_clickable((by, locator)))
+            element = driver.find_element(by, locator)
+            element.send_keys(text)
+            return
+        except StaleElementReferenceException:
+            time.sleep(0.5)
+        except ElementNotInteractableException:
+            print(f"[red]❌ Element '{feldname}' nicht interagierbar[/red]")
+            raise
+    raise Exception(f"Konnte Feld '{feldname}' nach {versuche} Versuchen nicht ausfüllen")
+
 def führe_upload_durch(info, bilderpfad):
     print("[cyan]🌐 Starte Chrome-Debugging-Session...[/cyan]")
 
@@ -238,23 +257,11 @@ def führe_upload_durch(info, bilderpfad):
         driver.get("https://www.kleinanzeigen.de/p-anzeige-aufgeben-schritt2.html")
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "title")))
 
-        try:
-            driver.find_element(By.NAME, "title").send_keys(info["titel"])
-        except ElementNotInteractableException:
-            print("[red]❌ Element 'title' nicht interagierbar[/red]")
-            raise
+        send_keys_stabil(driver, By.NAME, "title", info["titel"], "title")
 
-        try:
-            driver.find_element(By.NAME, "description").send_keys(info["beschreibung"])
-        except ElementNotInteractableException:
-            print("[red]❌ Element 'description' nicht interagierbar[/red]")
-            raise
+        send_keys_stabil(driver, By.NAME, "description", info["beschreibung"], "description")
 
-        try:
-            driver.find_element(By.NAME, "priceAmount").send_keys(str(info["preis"]))
-        except ElementNotInteractableException:
-            print("[red]❌ Element 'priceAmount' nicht interagierbar[/red]")
-            raise
+        send_keys_stabil(driver, By.NAME, "priceAmount", str(info["preis"]), "priceAmount")
 
         zustand_mapping = {
             "neu": "new",
